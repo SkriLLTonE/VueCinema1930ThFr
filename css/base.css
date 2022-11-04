@@ -52,3 +52,21 @@ body {
     background: var(--or);
     color: var(--bl);
 }
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title__h {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--or);
+    text-transform: capitalize;
+    font-family: var(--cr);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--or);
+}
