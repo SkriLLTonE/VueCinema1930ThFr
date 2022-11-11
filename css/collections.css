@@ -15,6 +15,7 @@
     height: 193px;
     z-index: 1;
     color: white;
+    overflow: hidden;
 }
 
 .collect__imgBg {
@@ -42,6 +43,8 @@
     z-index: 10;
     left: 6px;
     top: 7px;
+    transform: scale(1.5);
+    transition: 0.4s;
 }
 
 .collect__body {
@@ -51,10 +54,13 @@
     flex-direction: column;
     height: 100%;
     gap: 15px;
+    transition: 0.4s;
+    opacity: 0;
 }
 
 .collect__icon {
     font-size: 40px;
+    transition: 0.4s;
 }
 
 .collect__h {
@@ -62,5 +68,16 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 22px;
+}
 
+.collect__card:hover .lines {
+    transform: scale(1);
+}
+
+.collect__card:hover .collect__icon {
+    transform: rotateX(360deg);
+}
+.collect__card:hover .collect__body {
+    opacity: 1;
+    transform: scale(1.3);
 }
